@@ -29,6 +29,7 @@ const showQuestion = () => {
     allQuestions.querySelectorAll("li").forEach((option, index) => {
       option.addEventListener("click", () => handleOptionClick(index));
       scoreDisplay.style.display="none";
+      nextBtn.style.display = "flex";
     });
   } else {
     allQuestions.innerHTML =
