@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/Favicon.png">
+  <title>Quiz Games JS</title>
+</head>
+<body>
+  
+  <main class="main">
+    <section class="start">
+    <div class="containerStart">
+      <h1>Quiz of Games</h1>
+      <button class="startQuiz">Iniciar</button>
+    </div>
+    </section>
+    <section class="selectQuiz">
+      <div class="selectQuizContainer">
+        <h1>Selecione um jogo</h1>
+        <div class="buttonsSelectGame">
+          <button class="btnValorant">Valorant</button>
+          <button class="btnPhasmophobia">Phasmophobia</button>
+          <button class="btnCrash">Crash Bandicoot</button>
+          <button class="btnHollow">Hollow Knight</button>
+          <button class="btnAllGames">All Games</button>
+        </div>
+      </div>
+    </section>
+    <section class="quiz">
+      <div class="mainQuestions"></div>
+      <h4 class="score"></h4>
+      <div class="buttonsQuiz">
+        <button class="reset">Reiniciar</button>
+        <button class="reseta active">Reiniciar</button>
+        <button class="next">Proxima</button>
+      </div>
+    </section>
+    <section class="breve">
+      <span>Em breve</span>
+      <button class="reset2">Voltar para o ínicio</button>
+    </section>
+  </main>
+</body>
+<script src="./JS/index.js"></script>
+<script src="./JS/questions.js"></script>
+<script src="./JS/QuizConfig.js"></script>
+</html>
