@@ -30,6 +30,7 @@ const showQuestion = () => {
       option.addEventListener("click", () => handleOptionClick(index));
       scoreDisplay.style.display="none";
       nextBtn.style.display = "flex";
+      resetBtn.style.display = "flex";
     });
   } else {
     allQuestions.innerHTML =
@@ -108,7 +109,12 @@ const resetQuiz = () => {
 
 
 // Evento de clique para reiniciar o quiz volta o jogo escolhido do 0
-resetBtn2.addEventListener('click', resetQuiz);
+resetBtn.addEventListener('click', ()=>{
+  resetQuiz()
+});
+resetBtn2.addEventListener('click', () =>{
+  location.reload();
+})
 
 // Função para atualizar o display da pontuação
 const updateScoreDisplay = () => {
@@ -117,7 +123,6 @@ const updateScoreDisplay = () => {
 // Função para reiniciar pagina do em breve
 resetBtnBreve.addEventListener("click", ()=>{
   location.reload();
-  console.log("click");
 });
 
 

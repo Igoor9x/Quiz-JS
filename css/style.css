@@ -160,9 +160,6 @@ main.active{
   user-select: none;
   cursor: pointer;
 }
-.quiz.active li:hover{
-  border: 2px solid #fff;
-}
 .quiz.active button{
   padding: 8px 30px;
 }
